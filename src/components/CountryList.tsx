@@ -1,4 +1,4 @@
-import { ICountry } from "../types/type";
+import { ICountry } from "../types/types";
 import { CountryItem } from "./CountryItem";
 
 interface ICountryList {
@@ -7,7 +7,7 @@ interface ICountryList {
 
 export const CountryList = ({ countries }: ICountryList) => {
   return (
-    <ul className="list-group ">
+    <ul className="list-group">
       {countries.map((country) => (
         <CountryItem key={country.name} country={country} />
       ))}

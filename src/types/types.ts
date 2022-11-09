@@ -16,12 +16,12 @@ export interface ICountryAPI {
   population: number;
 }
 
-interface ICountryNativaNameName {
+interface ILanguage {
   common: string;
   official: string;
 }
 interface ICountryNativaName {
-  [key: string]: ICountryNativaNameName | undefined;
+  [language: string]: ILanguage | undefined;
 }
 
 interface ICountryName {
